@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <style type="text/css">
+        section {
+            padding: 10px;
+            border-bottom: 5px solid red;
+        }
+
+        div {
+            background: red;
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-width-height p {
+            width: 300px;
+            background: yellowgreen;
+        }
+        #text-by-width-height div {
+            width: 200px;
+            height: 200px;
+            max-height: 300px;
+            max-width: 300px;
+        }
+
+        #text-by-width-height div:hover {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+
+
+    <style type="text/css">
+        #text-by-padding p {
+            width: 200px;
+            background: yellowgreen;
+        }
+
+        #text-by-padding div {
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <style type="text/css">
+
+        #text-by-margin div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 100px;
+        }
+
+        #text-by-margin div:nth-child(2) {
+            margin-top: 150px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+
+<section id="text-by-width-height">
+    <p>300px</p>
+    <div>我爱我家</div>
+</section>
+
+<section id="text-by-padding">
+    <p>200px</p>
+    <div>我爱我家</div>
+</section>
+
+<section id="text-by-margin">
+    <div>内容A</div>
+    <div>内容B</div>
+</section>
+
+</body>
+</html>
