@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        section {
+            padding: 10px;
+            border-bottom: 5px solid red;
+        }
+
+        div {
+            border: 1px solid red;
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-color div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-image div {
+            width: 200px;
+            height: 200px;
+            background-image: url("../z-image/背景图.png");
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-repeat div {
+            width: 200px;
+            height: 200px;
+            background-image: url("../z-image/list-style-image.png");
+            background-repeat: no-repeat;
+            /*background-repeat: repeat-x;*/
+            /*background-repeat: repeat-y;*/
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-size div {
+            width: 200px;
+            height: 200px;
+            background-image: url("../z-image/背景图.png");
+            background-size: 100% 100%;
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-position div {
+            width: 200px;
+            height: 200px;
+            background-image: url("../z-image/list-style-image.png");
+            background-position-y: top;
+            background-position-x: left;
+        }
+    </style>
+
+    <style type="text/css">
+        body {
+            background-image: url("../z-image/list-style-image.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-clip div {
+            width: 200px;
+            height: 200px;
+            border: 10px solid green;
+            background-image: url("../z-image/背景图.png");
+            background-clip: padding-box;
+            padding: 10px;
+        }
+    </style>
+
+    <style type="text/css">
+        #text-by-origin div {
+            width: 200px;
+            height: 200px;
+            border: 10px solid green;
+            background-image: url("../z-image/背景图.png");
+            background-origin: content-box;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<section id="text-by-color">
+    <div></div>
+</section>
+
+<section id="text-by-image">
+    <div></div>
+</section>
+
+<section id="text-by-repeat">
+    <div></div>
+</section>
+
+<section id="text-by-size">
+    <div></div>
+</section>
+
+<section id="text-by-position">
+    <div></div>
+</section>
+
+<section id="text-by-clip">
+    <div></div>
+</section>
+
+<section id="text-by-origin">
+    <div></div>
+</section>
+
+</body>
+</html>
