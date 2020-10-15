@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z轴属性</title>
+    <style>
+        #text-by-index #parent {
+            width: 300px;
+            height: 3000px;
+            border: 3px solid red;
+        }
+
+        #text-by-index #childrenA {
+            width: 100px;
+            height: 100px;
+            background-image: url("../image/背景图.png");
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        #text-by-index #childrenB {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+<section id="text-by-index">
+    <div id="parent">
+        <div id="childrenA"></div>
+        <div id="childrenB"></div>
+        <p>枯藤老树昏鸦啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+        <p>小桥流水人家啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+        <p>古道西风瘦马啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+        <p>夕阳西下啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+    </div>
+</section>
+
+</body>
+</html>
